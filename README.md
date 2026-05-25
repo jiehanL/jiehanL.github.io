@@ -1,6 +1,6 @@
 # jiehanL.github.io
 
-Personal academic website 
+Personal academic website: https://jiehanL.github.io
 
 ## File structure
 
