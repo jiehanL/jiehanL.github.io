@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage{fancyhdr}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+% \usepackage{fontawesome} % not used in body; uncomment if icons added
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable / ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{2pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Jiehan Liu} \\ \vspace{3pt}
+    \small
+    Encina Hall, 616 Jane Stanford Way, Stanford, CA 94305
+    $|$
+    \hspace{.5pt} \href{mailto:jiehanl@stanford.edu}{jiehanl@stanford.edu}
+    $|$
+    \hspace{.5pt} \href{https://jiehanL.github.io}{jiehanL.github.io}
+\end{center}
+
+
+%---------- RESEARCH INTERESTS ----------
+
+\section{Research Interests}
+  \vspace{1pt}
+  \small Political methodology; measurement; high-dimensional data and machine learning for social science; estimation of heterogeneous treatment effects. Substantive applications in political behavior, public opinion, and the political consequences of generative AI.
+
+
+%---------- EDUCATION ----------
+
+\section{Education}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+
+    \resumeEducationHeading
+      {Stanford University}{Stanford, CA}
+      {Ph.D.\ in Political Science (Political Methodology; Comparative Politics)}{Sep.\ 2024 \textbf{--} Aug.\ 2029 (expected)}
+
+    \resumeEducationHeading
+      {The University of Chicago}{Chicago, IL}
+      {M.A.\ in Computational Social Science}{Sep.\ 2021 \textbf{--} Aug.\ 2023}
+
+    \resumeEducationHeading
+      {Jilin University}{Changchun, China}
+      {B.A.\ in International Politics; B.S.\ in Computer Science}{Jun.\ 2017 \textbf{--} Jun.\ 2021}
+
+  \resumeSubHeadingListEnd
+
+
+%---------- PUBLICATIONS ----------
+
+\section{Publications}
+  \vspace{2pt}
+
+  \textit{\small Peer-Reviewed Articles}
+  \resumeSubHeadingListStart
+    \small\item Offer-Westort, M., \textbf{Liu, J.}, Feamster, N., Garg, K., Hoang, N.\ P., \& Hosamane, S.\ (2026). Deep canvassing with automated conversational agents: Personalized messaging to change attitudes. \textit{Research \& Politics}, 13(1), 20531680251414926.
+  \resumeSubHeadingListEnd
+
+  \vspace{2pt}
+  \textit{\small Working Papers}
+  \resumeSubHeadingListStart
+    \small\item \textbf{Liu, J.}, Liu, Z., \& Xu, Y.\ (2025). A Practical Guide to Estimating Conditional Marginal Effects: Modern Approaches. \textit{arXiv:2504.01355}.
+    \small\item Hainmueller, J., \textbf{Liu, J.}, Liu, Z., Mummolo, J., \& Xu, Y.\ (2025). A Response to Recent Critiques of Hainmueller, Mummolo and Xu (2019) on Estimating Conditional Relationships. \textit{arXiv:2502.05717}.
+    \small\item Westwood, S.\ J., Grimmer, J., Hall, A.\ B., Flanigan, B., \& \textbf{Liu, J.} Measuring Perceived Slant in Large Language Models Through User Evaluations.
+  \resumeSubHeadingListEnd
+
+  \vspace{2pt}
+  \textit{\small Work in Progress}
+  \resumeSubHeadingListStart
+    \small\item \textbf{Liu, J.} Auditing Measurement Uncertainty in LLM-Based Text Coding.
+  \resumeSubHeadingListEnd
+
+
+%---------- TEACHING ----------
+
+\section{Teaching}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+    \small\item \textbf{Teaching Assistant, Stanford University.}
+      \begin{itemize}[leftmargin=0.25in, itemsep=-1pt]
+        \small\item POLISCI 1, \textit{The Science of Politics} --- Fall 2025 (Instructors: E.\ Chapman, S.\ Paci).
+        \small\item POLISCI 157, \textit{The Politics of AI} --- Summer 2026 (Instructor: S.\ Paci).
+      \end{itemize}
+    \vspace{1pt}
+    \small\item \textbf{Tutorial.} \textit{interflex}: Conditional Marginal Effects in R (2025) --- documentation for the companion R package to Liu, Liu, \& Xu (2025).
+  \resumeSubHeadingListEnd
+
+
+%---------- CONFERENCE PRESENTATIONS ----------
+
+\section{Conference Presentations}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+    \small\item \textit{Auditing Measurement Uncertainty in LLM-Based Text Coding.} 43rd Annual Summer Meeting of the Society for Political Methodology (PolMeth), 2026 (forthcoming).
+    \small\item \textit{Bots with Bites: Social Media Robots and Autocratic Surviving Strategies.} 80th Annual Midwest Political Science Association Conference, Chicago, IL, April 2023.
+  \resumeSubHeadingListEnd
+
+
+%---------- HONORS & AWARDS ----------
+
+\section{Honors \& Awards}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+    \small\item \textbf{EDGE Doctoral Fellowship}, Stanford University, 2024.
+    \small\item \textbf{H\&S Dean's Scholars Fellowship}, Stanford University, 2024--2029.
+    \small\item \textbf{Maroon Scholar Research Award}, The University of Chicago, 2021, 2022.
+    \small\item \textbf{China National Scholarship}, Ministry of Education of China (top 0.2\% of students), 2020.
+  \resumeSubHeadingListEnd
+
+
+%---------- SELECTED GRADUATE COURSEWORK ----------
+
+\section{Selected Graduate Coursework}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+    \small\item Causal Inference; Advanced Topics in Causal Inference; Linear Models; Applied Longitudinal Data Analysis; Large-Scale Computing for the Social Sciences; Political Regimes and Transitions.
+  \resumeSubHeadingListEnd
+
+
+%---------- SKILLS & LANGUAGES ----------
+
+\section{Skills \& Languages}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+    \small\item \textbf{Statistical computing:} R, Stata, Stan. \textbf{Programming:} Python, SQL, C, Java, JavaScript; Git, Docker, AWS, QGIS, \LaTeX.
+    \small\item \textbf{Languages:} Mandarin (native), English (professional), Russian (elementary).
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
